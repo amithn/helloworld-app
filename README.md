@@ -71,7 +71,7 @@ It is http and not http(s)
     </li>
     <li>
     Check whether you app has been updated
-    <li>
+    </li>
 <ol>
 
 
