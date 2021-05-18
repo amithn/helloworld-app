@@ -56,6 +56,7 @@ It is http and not http(s)
 <ol>
     <li>
     Changing the text in views/index.html
+    ``` Hello  ```
     </li>  
     <li>
     Rebuild the image
