@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: raman-app
+  name: YOUR_NAME-app
   labels:      
     type: bootcamp                          
-    app: raman-app
+    app: YOUR_NAME-app
 spec:
   containers:
   - name: bootcamp-app
-    image: harbor.tanzuworkshop.com/bootcamp/raman-app
+    image: harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
     imagePullPolicy: Always
     ports:
          - containerPort: 8080
