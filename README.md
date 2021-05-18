@@ -1,12 +1,9 @@
 # helloworld-app
-A simple NodeJS app for Kubernetes bootcamp
-
-# helloworld-app
 A simple NodeJS app for Kubernetes bootcamps
 
-# 1) Download Docker Desktop and install it on your laptop
+### 1) Download Docker Desktop and install it on your laptop
 
-# 2) Build a container image - replace YOUR_NAME with your name like amithn for example
+### 2) Build a container image - replace YOUR_NAME with your name like amithn for example
 ```
 docker build . -t harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 ```
