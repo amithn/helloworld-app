@@ -8,12 +8,20 @@ A simple NodeJS app for Kubernetes bootcamps
 docker build . -t harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 ```
 
-### 3) Login to the container registry
+### 3) Running your container image locally (not tested on Windows), 
+```
+docker run -p 8080:8080 harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
+```
+
+If all goes well you should be able to access the app at http://localhost:8080
+
+
+### 4) Login to the container registry (password will be provided during the workshop)
 ```
 docker login -u bootcamp harbor.tanzuworkshop.com
 ```
 
-### 4) Push the image to the container registry 
+### 5) Push your image to the container registry 
 ```
 docker push harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 ```
@@ -30,9 +38,10 @@ kubectl apply -f config/pod.yaml
 kubectl apply -f config/service.yaml
 ```
 
-### 7) Accessing your service 
+### 7) Accessing your app on Kubernetes 
 ```
-➜  helloworld-app git:(main) ✗ kubectl get svc
+Run the command: 
+kubectl get svc
 NAME                 TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
 helloworld-service   LoadBalancer   10.108.235.7   10.213.112.72   80:31866/TCP   4m58s
 ```
