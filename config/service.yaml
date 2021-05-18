@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: YOUR-NAME-lb
+  name: YOUR_NAME-service
 spec:
   selector:
-    app: YOUR-NAME-app
+    type: bootcamp
+    app: YOUR_NAME-app
   type: LoadBalancer
   ports:
     - protocol: TCP

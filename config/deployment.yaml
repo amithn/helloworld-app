@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: NAME-deployment
+  name: YOUR_NAME-deployment
   labels:
-     deployment: NAME-deployment
+     deployment: YOUR_NAME-deployment
 spec:
   selector:
       matchLabels:
-        app: NAME-app
+        app: YOUR_NAME-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: NAME-app
+        app: YOUR_NAME-app
     spec:
       containers:
-        - name: nodejs-shark-app
-          image: harbor.pcfplatform.com/NAME-app:latest
-          imagePullPolicy: IfNotPresent
+        - name: bootcamp-app
+          image: harbor.tanzuworkshop.com/YOUR_NAME-app:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
