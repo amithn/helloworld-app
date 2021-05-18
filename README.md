@@ -1,7 +1,7 @@
 ## helloworld-app
 A simple NodeJS app for Kubernetes bootcamps
 
-First go to http://config.tanzuworkshop.com and download your config file.
+First connect your VPN and then go to http://config.tanzuworkshop.com and download your config file.
 
 ### 1) Download Docker Desktop and install it on your laptop
 
@@ -28,19 +28,19 @@ docker login -u bootcamp harbor.tanzuworkshop.com
 docker push harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 ```
 
-### 5) Deploy the image to Kubernetes (replace all occurence of YOUR_NAME with your name in the file config/pod.yaml)
+### 6) Deploy the image to Kubernetes (replace all occurence of YOUR_NAME with your name in the file config/pod.yaml)
 
 ```
 kubectl apply -f config/pod.yaml
 ```
 
-### 6) Deploy a Service to get traffic to your pod (replace all occurence of YOUR_NAME with your name in the file config/service.yaml)
+### 7) Deploy a Service to get traffic to your pod (replace all occurence of YOUR_NAME with your name in the file config/service.yaml)
 
 ```
 kubectl apply -f config/service.yaml
 ```
 
-### 7) Accessing your app on Kubernetes 
+### 8) Accessing your app on Kubernetes 
 ```
 Run the command: 
 kubectl get svc
@@ -51,4 +51,25 @@ helloworld-service   LoadBalancer   10.108.235.7   10.213.112.72   80:31866/TCP 
 Copy the IP address under EXTERNAL-IP and head to http://EXTERNAL-IP 
 if all went well, you should see the page with your name! 
 It is http and not http(s)
+
+#### You can now try:
+<ol>
+    <li>
+    Changing the text in views/index.html,
+    </li>  
+    <li>
+    Rebuild the image
+    </li>
+    <li>
+    Push the new image to the registry
+    </li>
+    <li>
+    Delete the existing Pod
+    </li>
+    <li>
+    Deploy the new pod with the updated image
+    </li>
+<ol>
+
+
 
