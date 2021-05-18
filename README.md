@@ -52,10 +52,10 @@ Copy the IP address under EXTERNAL-IP and head to http://EXTERNAL-IP
 if all went well, you should see the page with your name! 
 It is http and not http(s)
 
-#### You can now try:
+#### Challenge:
 <ol>
     <li>
-    Changing the text in views/index.html,
+    Changing the text in views/index.html
     </li>  
     <li>
     Rebuild the image
@@ -67,8 +67,11 @@ It is http and not http(s)
     Delete the existing Pod
     </li>
     <li>
-    Deploy the new pod with the updated image
+    Deploy the new pod with the updated image (only change the reference to the container image in your Pod, if you have changed your image name)
     </li>
+    <li>
+    Check whether you app has been updated
+    <li>
 <ol>
 
 
