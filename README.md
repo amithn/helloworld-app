@@ -1,6 +1,8 @@
 ## helloworld-app
 A simple NodeJS app for Kubernetes bootcamps
 
+First go to http://config.tanzuworkshop.com and download your config file.
+
 ### 1) Download Docker Desktop and install it on your laptop
 
 ### 2) Build a container image - replace YOUR_NAME with your name like amithn for example
@@ -48,4 +50,5 @@ helloworld-service   LoadBalancer   10.108.235.7   10.213.112.72   80:31866/TCP 
 
 Copy the IP address under EXTERNAL-IP and head to http://EXTERNAL-IP 
 if all went well, you should see the page with your name! 
+It is http and not http(s)
 
