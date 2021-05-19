@@ -25,7 +25,7 @@ docker run -p 8080:8080 harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 If all goes well you should be able to access the app at http://localhost:8080
 
 
-### 4) Login to the container registry (password will be provided during the workshop)
+### 4) Login to the container registry (password will be provided during the workshop PASSWORD: VMware1!
 ```
 docker login -u bootcamp-user harbor.tanzuworkshop.com
 ```
