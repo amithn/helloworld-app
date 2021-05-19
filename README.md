@@ -1,7 +1,12 @@
 ## helloworld-app
 A simple NodeJS app for Kubernetes bootcamps
 
-First connect your VPN and then go to http://config.tanzuworkshop.com and download your config file.
+First connect your VPN and then go to http://config.tanzuworkshop.com and download your config file and run:
+
+``` 
+export KUBECONFIG=absolute_path_to_config_file
+export KUBECONFIG=$PWD/bootcamp100.cfg - for example
+```
 
 ### 1) Download Docker Desktop and install it on your laptop
 
@@ -20,7 +25,7 @@ If all goes well you should be able to access the app at http://localhost:8080
 
 ### 4) Login to the container registry (password will be provided during the workshop)
 ```
-docker login -u bootcamp harbor.tanzuworkshop.com
+docker login -u bootcamp-user harbor.tanzuworkshop.com
 ```
 
 ### 5) Push your image to the container registry 
@@ -29,6 +34,8 @@ docker push harbor.tanzuworkshop.com/bootcamp/YOUR_NAME-app
 ```
 
 ### 6) Deploy the image to Kubernetes (replace all occurence of YOUR_NAME with your name in the file config/pod.yaml)
+
+
 
 ```
 kubectl apply -f config/pod.yaml
