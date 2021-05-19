@@ -8,6 +8,8 @@ export KUBECONFIG=absolute_path_to_config_file
 export KUBECONFIG=$PWD/bootcamp100.cfg - for example
 ```
 
+Download this repository onto your laptop, Click on Code -> Download Zip from the drop down.
+
 ### 1) Download Docker Desktop and install it on your laptop
 
 ### 2) Build a container image - replace YOUR_NAME with your name like amithn for example
